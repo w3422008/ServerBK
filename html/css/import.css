@@ -1,0 +1,176 @@
+/* ドラッグアンドドロップエリア */
+body {
+    font-family: Arial, sans-serif;
+    }
+
+    .mt-3 {
+    margin-top: 1rem;
+    }
+
+    .text-center {
+    text-align: center;
+    }
+
+    .p-3 {
+    padding: 1rem;
+    }
+
+    .rounded {
+    border-radius: 0.25rem;
+    }
+
+    .col-md-10 {
+    width: 80%;
+    max-width: 80%;
+    }
+
+    .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .dashed-border {
+    border: 1px dashed #4CAF50;
+    }
+
+    .mt-2 {
+    margin-top: 0.5rem;
+    }
+
+    #file_drag_drop_area {
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.5s ease;
+        height: 100px;
+    }
+
+    #file_drag_drop_area1 {
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.5s ease;
+        height: 100px;
+    }
+
+    #file_drag_drop_area2 {
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.5s ease;
+        height: 100px;
+    }
+
+/* 注意書きのstyle */
+    .caution {
+        border: 2px solid red;
+        padding: 10px;
+        margin: 10px;
+        width: 65%;
+        margin-left: 4%
+    }
+
+    .custom-text {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: red; 
+    }
+
+    .caution p {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-weight: normal;
+    }
+
+
+/*文字、罫線の設定*/
+    .uk-form-label {
+        font-size: 1rem;
+    }
+
+    .note {
+        padding: 10px;
+        background: linear-gradient(white 35px, #f0f0f0 35px, #f0f0f0 36px);
+        background-size: 100% 36px;
+        line-height: 36px;
+        word-break: break-word; /* 単語の途中で改行 */
+    }
+
+    .note p {
+        margin: 0; /* 段落の余白をなくす */
+        white-space: pre-line; /* 改行を保持しつつ、空白は反映しない */
+        transform: translateY(-5px); /* 文字を少し上に移動 */
+    }
+
+    .error-message {
+        color: #ff0000; /* エラーチェックに引っかかったものは赤文字でメッセージ表示 */
+    }
+
+/* インポート完了のメッセージ */
+    .import-message{
+        border: 1px solid #EFFFE8;
+        background-color: #EFFFE8;
+        padding: 5px;
+        margin: 5px;
+        width: 50%;
+        margin-left: 5%;
+        border-radius: 10px; /* 角を丸くする */
+    }
+    .import-message h2{
+        text-align: center;
+        color: #2a682c;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 15px; /* アイコンの上に余白を追加 */
+    }
+    .import-message i {
+        font-size: 44px;
+        color: #2a682c;
+        display: block; /* アイコンをブロック要素にすることで、下の余白を詰める */
+        margin-top: 10px; /* アイコンの上に余白を追加 */
+    }
+    .import-message p {
+        text-align: center;
+        color: #2a682c;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .bt{
+        display: block; /* ブロック要素にする */
+        margin-left: 28%;       
+        margin-top: 7px; /* 上の余白を追加 */
+    }
+
+/* インポート完了メッセージ_画面サイズが小さい場合のスタイル */
+    @media (max-width: 959px) {
+        .import-message {
+            width: 50%; /* 幅を90%に変更 */
+            margin-left: 5%; /* 左右の余白を均等にする */
+            margin-top: 120px; /* 上の余白を追加 */
+        }
+        .import-message h2 {
+            font-size: 24px; /* フォントサイズを小さくする */
+        }
+        .import-message i {
+            font-size: 34px; /* アイコンのサイズを小さくする */
+        }
+        .import-message p {
+            font-size: 14px; /* フォントサイズを小さくする */
+        }
+        .bt {
+            margin-left: 26%; /* 左右の余白を均等にする */
+        }
+    }
+
+
+
+
+
+
